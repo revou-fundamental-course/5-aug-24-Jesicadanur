@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KALKULATOR BMI</h1>
+        <section class="highlight-section">
+            <h2>Mudah, Cepat, dan Akurat!</h2>
+            <h3>Kalkulator BMI kami memudahkan Anda memantau kesehatan dengan hasil yang cepat dan akurat. Dapatkan rekomendasi kesehatan yang dipersonalisasi untuk menjaga berat badan ideal dan meningkatkan kesejahteraan Anda.</h3>
+            <p>Hitung sekarang dan dapatkan rekomendasi kesehatan Anda!</p>
+        </section>
+        <form id="bmi-form">
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="gender-radio">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        <span class="radio-label">Laki-laki</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" required>
+                        <span class="radio-label">Perempuan</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age">Usia:</label>
+                <input type="number" id="age" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Berat Badan (kg):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Tinggi Badan (cm):</label>
+                <input type="number" id="height" required>
+            </div>
+            <button type="submit" class="btn">Hitung BMI</button>
+            <button type="reset" class="btn btn-reset">Reset</button>
+          
+        </form>
+
+        <div id="result" class="result-containesr">
+            <!-- Hasil akan ditampilkan di sini -->
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
